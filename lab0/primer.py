@@ -39,7 +39,7 @@ print(seventeen)
 print (weekDays[1])
 
 # Apropos string formating and printing
-sentence = minion['name'] + ' has ' + str(minion['eyes']) + ' and likes ' + str(minion['likes']) + '...'
+sentence = minion['name'] + ' has ' + str(minion['eyes']) + ' eye(s) and likes ' + str(minion['likes']) + '...'
 print(sentence)
 print('{} has {} eye(s) and likes {}...'.format(minion['name'], minion['eyes'], minion['likes']))
 
