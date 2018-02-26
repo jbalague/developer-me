@@ -4,7 +4,7 @@ While learning some HTTP and Python...
 
 ### HTTP Server
 
-[server01.py](lab1/server01.py) A simple http server
+[server01.py](server01.py) A simple http server
 
 ``` python
 import http.server
@@ -76,7 +76,7 @@ HTTP 101
 - Headers - Metadata
 - Body - Data
 
-[server02.py](lab1/server02.py) A sligthly better HTML response
+[server02.py](server02.py) A sligthly better HTML response
 
 ``` python
 import http.server
@@ -119,7 +119,7 @@ $ curl -v 127.0.0.1:8787
 
 And all browsers are working now!
 
-[server03.py](lab1/server03.py) Adding more standard/custom headers...
+[server03.py](server03.py) Adding more standard/custom headers...
 
 ``` python
 import http.server
@@ -140,7 +140,7 @@ server = http.server.HTTPServer(('127.0.0.1', 8787), RequestHandler)
 server.serve_forever()
 ```
 
-[server04.py](lab1/server04.py) Inspecting received headers
+[server04.py](server04.py) Inspecting received headers
 
 ``` python
 import http.server
@@ -167,7 +167,7 @@ server.serve_forever()
 Python 102
 - Iteration
 
-[server05.py](lab1/server05.py) Exploring unknown paths
+[server05.py](server05.py) Exploring unknown paths
 
 ``` python
 import http.server
@@ -204,7 +204,7 @@ server.serve_forever()
 Python 103
 - Branching
 
-[server06.py](lab1/server06.py) Hey JSON, what time is it?
+[server06.py](server06.py) Hey JSON, what time is it?
 
 ``` python
 import http.server
@@ -264,7 +264,7 @@ Python 104
 - datetime
 - json
 
-[server07.py](lab1/server07.py) There are other methods out there
+[server07.py](server07.py) There are other methods out there
 
 ``` python
 import http.server
@@ -372,7 +372,7 @@ $ curl -v -H 'Content-type: application/json' -d '{"text": "lalala"}' 127.0.0.1:
 curl -v -H 'Content-type: application/json' -d -X POST '{"text": "lalala"}' 127.0.0.1:87
 ```
 
-[server08.py](lab1/server08.py) Query strings and parameters I (GET)
+[server08.py](server08.py) Query strings and parameters I (GET)
 
 ``` python
 import http.server
@@ -463,7 +463,7 @@ server = http.server.HTTPServer(('127.0.0.1', 8787), RequestHandler)
 server.serve_forever()
 ```
 
-[server09.py](lab1/server09.py) Query strings and parameters II (POST)
+[server09.py](server09.py) Query strings and parameters II (POST)
 
 ``` python
 import http.server
@@ -582,7 +582,7 @@ server = http.server.HTTPServer(('127.0.0.1', 8787), RequestHandler)
 server.serve_forever()
 ```
 
-[server10.py](lab1/server10.py) Time to refactor
+[server10.py](server10.py) Time to refactor
 
 ``` python
 import http.server
