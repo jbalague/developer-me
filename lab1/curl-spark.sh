@@ -1,12 +1,12 @@
-# Replace <YOUR ACCESS TOKEN GOES HERE> with your Cisco SPark Access Token
+# Replace <YOUR ACCESS TOKEN GOES HERE> with your Cisco Spark Access Token
 export SPARK_ACCESS_TOKEN=<YOUR ACCESS TOKEN GOES HERE>
+
+# Get list of rooms 
+curl -s https://api.ciscospark.com/v1/rooms \
+-H "Authorization: Bearer $SPARK_ACCESS_TOKEN"
 
 # Replace <ONE ROOM ID> with one particular Cisco Spark Room ID
 export SPARK_ROOM_ID=<ONE ROOM ID>
-
-# # Get list of rooms 
-# curl -s https://api.ciscospark.com/v1/rooms \
-# -H "Authorization: Bearer $SPARK_ACCESS_TOKEN"
 
 # Get room details
 curl -vs "https://api.ciscospark.com/v1/rooms/$SPARK_ROOM_ID" \
